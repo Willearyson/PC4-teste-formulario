@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC4 formulário</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="general-space">
+                <div class="items-employee-bg-color">
+                    <div class="container-general">
+                        <div class="item-employee-row">
+                            <div class="column-name">
+                                <p>nome</p>
+                            </div>
+                            <div class="column-office">
+                                <p>cargo</p>
+                            </div>
+                            <div class="column-status">
+                                <p>status</p>
+                            </div>
+                            <div class="column-function">
+                                <p>função</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-employee-container">
+                </div>
+                <div class="btn-new-user-space">
+                    <div class="btn-new">
+                        <p>Novo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute-space">
+                
+                <div class="form-space">
+                    <div class="title-form"><p>Cadastro de Usuário</p><img id="close" src="./images/02-14.png" alt=""></div>
+                    <form class="container-form" action="">
+                        
+                        <div class="labels-container">
+                            <label id="input-foto" for="foto">
+                                <span>Foto</span>
+                                <div class="input-foto--img">
+                                    <img id="imgfoto" src="./images/download.png" alt="foto">
+                                    <div class="input-foto-img--modificar">
+                                        <p>Modificar</p>
+                                    </div>
+                                </div>
+                                <input type="file" name="img" id="fileimg" accept="image/*">
+                            </label>
+                            <label id="label-name" for="input-name">
+                                <span>nome</span>
+                                <input type="text" id="input-name" placeholder="digite seu nome" name="name" required>
+                                <p class="msg-erro"></p> 
+                            </label>
+                            <label for="input-email">
+                                <span>email</span>
+                                <input type="email" id="input-email" placeholder="me@exemplo.com" name="email" required>
+                           </label>
+                            <label for="setor">
+                                <span>setor</span>
+                                <select name="setor" id="setor">
+                                    <option value="0">Escolha seu setor</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Ads">Ads</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Branding & Marketing">Branding & Marketing</option>
+                                    <option value="Architectural Genie">Architectural Genie</option>
+                                    <option value="Branding">Branding</option>
+                                </select>
+                            </label>
+                            <label for="cargo">
+                                <span>Cargo</span>
+                                <select name="cargo" id="cargo">
+                                    <option value="0">Escolha seu cargo</option>
+                                    <option value="Account executive">Account executive</option>
+                                    <option value="brand Manager">brand Manager</option>
+                                    <option value="Copywriting">Copywriting</option>
+                                    <option value="Content Manager">Content Manager</option>
+                                    <option value="Specialist">Specialist</option>
+                                    <option value="Computer Network Architect">Computer Network Architect</option>
+                                    <option value="Trainee">Trainee</option>
+                                </select>
+                            </label>
+                            <label id="label-fct" for="funcao">
+                                <span>função</span>
+                                <select name="funcao" id="funcao">
+                                    <option value="0">Escolha seu cargo</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Editor">Editor</option>
+                                </select>
+                            </label>
+                            <label id="label-radio" for="ative-inative">
+                                <select name="ative-inative" id="input-ative">
+                                    <option value="0">Selecione o status</option>
+                                    <option value="ativo">Ativo</option>
+                                    <option value="inativo">Inativo</option>
+                                </select>
+                   
+                            </label>
+
+                        </div>
+
+ 
+                        <div class="submit-space">
+                            <input onclick="armazenar()" type="submit"name="sumbit" id="submit-btn">
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
